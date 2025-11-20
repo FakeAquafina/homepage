@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LAN Portal | saluki-smash.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="title-block">
+                <h1>
+                    <span class="status-dot"></span>
+                    Home Portal
+                    <span class="badge">LAN</span>
+                </h1>
+                <p class="subtitle">
+                    Internal portal for LAN-only services & admin interfaces.
+                </p>
+            </div>
+            <div class="meta">
+                <span>Host: <strong>lan.saluki-smash.com</strong></span>
+                <span>Environment: <strong>LAN / Internal</strong></span>
+                <span>Admin interfaces ahead — handle with care.</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- LAN SERVICES -->
+            <section class="card">
+                <div class="card-header">
+                    <div class="card-title">LAN Services</div>
+                    <div class="card-tag">Internal</div>
+                </div>
+
+                <div class="button-grid">
+                    <!-- Adjust the hostnames/IPs to your actual LAN setup -->
+                    <a class="app-btn" href="http://pihole.lan/admin" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Pi-hole</span>
+                        <span class="sub">DNS / Ad block</span>
+                    </a>
+
+                    <a class="app-btn" href="https://jellyfin.saluki-smash.com" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="label">Jellyfin</span>
+                        <span class="sub">Media (via LAN)</span>
+                    </a>
+
+                    <a class="app-btn" href="https://ha.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Home Assistant</span>
+                        <span class="sub">Smart home</span>
+                    </a>
+
+                    <a class="app-btn" href="http://proxmox.lan" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Proxmox</span>
+                        <span class="sub">Virtualization host</span>
+                    </a>
+
+                    <a class="app-btn" href="http://nas.lan" target="_blank" rel="noopener noreferrer">
+                        <span class="label">NAS</span>
+                        <span class="sub">UGREEN / storage</span>
+                    </a>
+
+                    <a class="app-btn" href="http://router.lan" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Router</span>
+                        <span class="sub">Gateway admin</span>
+                    </a>
+
+                    <a class="app-btn" href="http://switch.lan" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Switch</span>
+                        <span class="sub">Core switch UI</span>
+                    </a>
+
+                    <a class="app-btn" href="https://stats.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Grafana</span>
+                        <span class="sub">Monitoring & dashboards</span>
+                    </a>
+
+                    <a class="app-btn" href="https://files.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Files</span>
+                        <span class="sub">NAS / file browser</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- INFO / LINK BACK TO PUBLIC -->
+            <section class="card">
+                <div class="card-header">
+                    <div class="card-title">Info</div>
+                </div>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <strong>Mode:</strong> LAN portal — internal tools & admin interfaces only.
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Tip:</strong> Use a password manager and unique credentials for each admin interface.
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Security:</strong> Restrict this portal to trusted subnets/VLANs and avoid exposing it
+                        via public DNS.
+                    </div>
+                </div>
+
+                <div class="lan-link">
+                    Need the external view? Go to
+                    <a href="https://saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        https://saluki-smash.com
+                    </a>.
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

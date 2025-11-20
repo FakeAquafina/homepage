@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Portal | saluki-smash.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="title-block">
+                <h1>
+                    <span class="status-dot"></span>
+                    Home Portal
+                    <span class="badge">Public</span>
+                </h1>
+                <p class="subtitle">
+                    Central hub for services exposed to the open web.
+                </p>
+            </div>
+            <div class="meta">
+                <span>Domain: <strong>saluki-smash.com</strong></span>
+                <span>Environment: <strong>Internet-facing</strong></span>
+                <span>Links open in new tabs.</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- PUBLIC SERVICES -->
+            <section class="card">
+                <div class="card-header">
+                    <div class="card-title">Services</div>
+                    <div class="card-tag">External</div>
+                </div>
+
+                <div class="button-grid">
+                    <a class="app-btn" href="https://jellyfin.saluki-smash.com" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="label">Jellyfin</span>
+                        <span class="sub">Media server</span>
+                    </a>
+
+                    <a class="app-btn" href="https://ha.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Home Assistant</span>
+                        <span class="sub">Smart home</span>
+                    </a>
+
+                    <a class="app-btn" href="https://stats.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Grafana</span>
+                        <span class="sub">Monitoring</span>
+                    </a>
+
+                    <a class="app-btn" href="https://git.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Git</span>
+                        <span class="sub">Repos</span>
+                    </a>
+
+                    <a class="app-btn" href="https://files.saluki-smash.com" target="_blank" rel="noopener noreferrer">
+                        <span class="label">Files</span>
+                        <span class="sub">NAS browser</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- INFO / LINK TO LAN -->
+            <section class="card">
+                <div class="card-header">
+                    <div class="card-title">Info</div>
+                </div>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <strong>Mode:</strong> Public portal — only reverse-proxied, authenticated services should
+                        appear here.
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Tip:</strong> Ctrl+Click / middle-click opens links in new tabs.
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Security:</strong> Never expose admin interfaces (Proxmox, NAS, router, etc.) directly
+                        to the open web.
+                    </div>
+                </div>
+
+                <div class="lan-link">
+                    On LAN? Use the internal dashboard at
+                    <a href="/lan.html">LAN portal</a>
+                    or via a dedicated host like
+                    <code>http://lan.saluki-smash.com</code>.
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
